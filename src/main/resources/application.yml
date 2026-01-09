@@ -1,0 +1,14 @@
+spring:
+  mvc:
+   view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+  datasource:
+     url: jdbc:oracle:thin:@//localhost:1521/XE
+     username: hr
+     password: happy
+     driver-class-name: oracle.jdbc.OracleDriver
+mybatis:
+  type-aliases-package: com.sist.web.vo
+  mapper-locations: mybatis/mapper/*.xml
+
